@@ -1,6 +1,13 @@
 #Germania\ImageFinder
 
-Callable wrapper around [Symfony's Finder Component.](http://symfony.com/doc/current/components/finder.html) For convenience purposes prepared for finding image files.
+**Callable wrapper around [Symfony's Finder Component.](http://symfony.com/doc/current/components/finder.html)  
+For convenience purposes prepared for finding image files.**
+
+[![Build Status](https://travis-ci.org/GermaniaKG/ImageFinder.svg?branch=master)](https://travis-ci.org/GermaniaKG/ImageFinder)
+[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/?branch=master)
+
+
 
 ##Installation
 

@@ -5,7 +5,7 @@ use Germania\ImageFinder\ImageFinder;
 use Symfony\Component\Finder\Finder;
 use \Traversable;
 
-class ImageFinderTest extends \PHPUnit_Framework_TestCase
+class ImageFinderTest extends \PHPUnit\Framework\TestCase
 {
 
 

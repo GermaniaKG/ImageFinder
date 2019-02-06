@@ -1,22 +1,25 @@
-#Germania\ImageFinder
+# Germania\ImageFinder
 
 **Callable wrapper around [Symfony's Finder Component.](http://symfony.com/doc/current/components/finder.html)  
 For convenience purposes prepared for finding image files.**
 
-[![Build Status](https://travis-ci.org/GermaniaKG/ImageFinder.svg?branch=master)](https://travis-ci.org/GermaniaKG/ImageFinder)
-[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/?branch=master)
+[![Packagist](https://img.shields.io/packagist/v/germania-kg/imagefinder.svg?style=flat)](https://packagist.org/packages/germania-kg/imagefinder)
+[![PHP version](https://img.shields.io/packagist/php-v/germania-kg/imagefinder.svg)](https://packagist.org/packages/germania-kg/imagefinder)
+[![Build Status](https://img.shields.io/travis/GermaniaKG/ImageFinder.svg?label=Travis%20CI)](https://travis-ci.org/GermaniaKG/ImageFinder)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/ImageFinder/build-status/master)
 
 
 
-##Installation
+## Installation
 
 ```bash
 $ composer require germania-kg/imagefinder
 ```
 
 
-##Usage
+## Usage
 
 Each iterator item will be an instance of Symfony's [SplFileInfo extension](http://api.symfony.com/3.2/Symfony/Component/Finder/SplFileInfo.html).
 
@@ -45,7 +48,7 @@ foreach ($images as $image) {
 }
 ```
 
-##Customization
+## Customization
 
 The constructor accepts an array with allowed file extensions.
 
@@ -62,17 +65,21 @@ $image_finder->extensions = array("jpe?g", "webp" );
 ```
 
 
-
-
-
-##Development and Testing
-
-Develop using `develop` branch, using [Git Flow](https://github.com/nvie/gitflow).   
+## Development
 
 ```bash
-$ git clone git@github.com:GermaniaKG/ImageFinder.git image-finder
-$ cd image-finder
-$ cp phpunit.xml.dist phpunit.xml
-$ phpunit
+$ git clone https://github.com/GermaniaKG/ImageFinder.git
+$ cd ImageFinder
+$ composer install
+```
+
+## Unit tests
+
+Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. Run [PhpUnit](https://phpunit.de/) test or composer scripts like this:
+
+```bash
+$ composer test
+# or
+$ vendor/bin/phpunit
 ```
 

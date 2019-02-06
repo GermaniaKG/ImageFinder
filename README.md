@@ -1,4 +1,4 @@
-# Germania\ImageFinder
+# Germania KG · ImageFinder
 
 **Callable wrapper around [Symfony's Finder Component.](http://symfony.com/doc/current/components/finder.html)  
 For convenience purposes prepared for finding image files.**
